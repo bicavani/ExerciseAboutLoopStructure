@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>loopForTable</title>
+</head>
+<body>
+ <script>
+     let sout;
+     sout = '<table style="border: 3px dotted red;" border="1px" cellspacing="0" cellpadding="3px" >';
+     for (let i = 1; i <= 10; i++) {
+         sout = sout + '<tr>';
+         for (let j = 1; j<=10; j++) {
+             sout = sout + '<td>' + i*j + '</td>';
+         }
+         sout = sout + '</tr>';
+     }
+     sout = sout + '</table>';
+     document.write(sout);
+ </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ShowOfSoNguyenTo</title>
+</head>
+<body>
+ <script>
+     let soLuongSNT, count, number;
+     soLuongSNT = parseInt(prompt('Nhap so luong SNT muon hien thi : '));
+     count = 0;
+     number = 1;
+     while (count < soLuongSNT) {
+         number++;
+         let numberIsSNT = true;
+         if (number === 2)
+             numberIsSNT = true;
+         else {
+             for (let i=2; i<number; i++) {
+                 numberModI = number % i;
+                 if (numberModI === 0)
+                     numberIsSNT = false;
+             }
+         }
+         if (numberIsSNT) {
+             document.write(number +"  ");
+             count++;
+         }
+     }
+
+ </script>
+</body>
+</html>

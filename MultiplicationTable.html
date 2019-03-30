@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MultiplicationTable</title>
+</head>
+<body>
+ <script>
+     let multiTable, i, j, mul;
+     multiTable = '<table border="1px">';
+     i = j = 1;
+     while (i <= 9) {
+         multiTable = multiTable + '<tr>';
+         while (j <= 9) {
+             mul = j*i;
+             multiTable = multiTable + '<td>' + j + " x " + i + ' = ' + mul +'</td>';
+             j++;
+         }
+         multiTable = multiTable + '</tr>';
+         j = 1;
+         i++;
+     }
+     document.write(multiTable);
+ </script>
+</body>
+</html>
